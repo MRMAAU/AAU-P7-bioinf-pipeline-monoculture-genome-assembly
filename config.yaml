@@ -1,0 +1,23 @@
+samples:
+  - "PBI54877.barcode01"
+  # Add more samples here as needed
+
+genome_size: "5m"
+
+paths:
+  project_root: "/projects/students/Bio-25-BT-7-2/rigtig_P7"
+  data_dir: "data"  # Relative to project_root/Snakefile location or absolute
+  analysis_dir: "analysis"
+  shared_conda: "/projects/students/Bio-25-BT-7-2/shared_conda_envs"
+  shared_resources: "/projects/students/Bio-25-BT-7-2/shared_resources"
+
+  # Databases
+  busco_downloads: "/projects/students/Bio-25-BT-7-2/shared_resources/busco_downloads"
+  kraken_db: "/projects/students/Bio-25-BT-7-2/shared_resources/kraken2_db"
+  checkm2_db: "/projects/students/Bio-25-BT-7-2/shared_resources/CheckM2_database/uniref100.KO.1.dmnd"
+  antismash_db: "/projects/students/Bio-25-BT-7-2/shared_resources/antismash_db"
+
+threads: 8
+
+# Busco lineage
+busco_lineage: "bacteria_odb10"
